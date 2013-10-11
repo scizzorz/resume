@@ -16,7 +16,6 @@
 		color: #666;
 	}
 	#container {
-		border-width: 1px;
 		padding: .5in;
 	}
 	small {
@@ -32,7 +31,6 @@
 		color: #000;
 	}
 	#container {
-		border-width: 0;
 		padding: 0in;
 	}
 }
@@ -41,7 +39,7 @@ html {
 	font-size: 11pt;
 }
 body {
-	font-family: Roboto, Verdana, sans-serif;
+	font-family: Roboto, sans-serif;
 }
 code {
 	font-family: 'Source Code Pro', monospace;
@@ -54,8 +52,6 @@ small {
 	margin: auto;
 	width: 7.5in;
 	height: 10in;
-	border-style: solid;
-	border-color: #333;
 }
 
 a {
@@ -78,13 +74,14 @@ h2 {
 }
 
 p {
-	margin: .4rem 0;
+	margin: .5rem 0;
 }
 
 #contact {
 	display: block;
 	text-align: center;
 	font-weight: bold;
+	margin-bottom: 1rem;
 }
 
 ul {
