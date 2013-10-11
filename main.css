@@ -17,6 +17,7 @@
 	}
 	#container {
 		border-width: 1px;
+		padding: .5in;
 	}
 	small {
 		display: none;
@@ -32,6 +33,7 @@
 	}
 	#container {
 		border-width: 0;
+		padding: 0in;
 	}
 }
 
@@ -52,7 +54,6 @@ small {
 	margin: auto;
 	width: 7.5in;
 	height: 10in;
-	padding: .5in;
 	border-style: solid;
 	border-color: #333;
 }
