@@ -32,6 +32,7 @@
 	}
 	#container {
 		padding: 0in;
+		height: 10in;
 	}
 }
 
@@ -51,7 +52,6 @@ small {
 #container {
 	margin: auto;
 	width: 7.5in;
-	height: 10in;
 }
 
 a {
