@@ -9,8 +9,11 @@
   a strong {
     color: #229;
   }
-  h2 {
+  h2:after {
     border-color: #999 !important;
+  }
+  h2 span {
+    background: #FBFBFB;
   }
   time {
     color: #666;
@@ -26,6 +29,9 @@
   body {
     background: #FFF;
     color: #000;
+  }
+  h2 span {
+    background: #FFF;
   }
   a {
     color: #000;
@@ -70,7 +76,24 @@ h1 {
 }
 h2 {
   margin: 0;
-  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+h2:after {
+  border-top: 1px solid #000;
+  display: block;
+  height: 1px;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 1.2rem;
+}
+
+h2 span {
+  padding-right: 1rem;
+  z-index: 10;
 }
 
 p {
