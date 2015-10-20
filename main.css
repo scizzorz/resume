@@ -1,107 +1,130 @@
 @media screen {
-	body {
-		background: #FBFBFB;
-		color: #333;
-	}
-	a {
-		color: #339;
-	}
-	a strong {
-		color: #229;
-	}
-	h2 {
-		border-color: #999 !important;
-	}
-	time {
-		color: #666;
-	}
-	#container {
-		padding: .5in;
-	}
-	small {
-		display: none;
-	}
+  body {
+    background: #FBFBFB;
+    color: #333;
+  }
+  a {
+    color: #339;
+  }
+  a strong {
+    color: #229;
+  }
+  h2:after {
+    border-color: #999 !important;
+  }
+  h2 span {
+    background: #FBFBFB;
+  }
+  time {
+    color: #666;
+  }
+  #container {
+    padding: .5in;
+  }
+  small {
+    display: none;
+  }
 }
 @media print {
-	body {
-		background: #FFF;
-		color: #000;
-	}
-	a {
-		color: #000;
-	}
-	#container {
-		padding: 0in;
-		height: 10in;
-	}
+  body {
+    background: #FFF;
+    color: #000;
+  }
+  h2 span {
+    background: #FFF;
+  }
+  a {
+    color: #000;
+  }
+  #container {
+    padding: 0in;
+    height: 10in;
+  }
 }
 
 html {
-	font-size: 11pt;
+  font-size: 11pt;
 }
 body {
-	font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 code {
-	font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 small {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 #container {
-	margin: auto;
-	width: 7.5in;
+  margin: auto;
+  width: 7.5in;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 h1, h2, strong {
-	color: #222;
+  color: #222;
 }
 h1 {
-	margin: 0;
-	text-align: center;
+  margin: 0;
+  text-align: center;
 }
 h2 {
-	margin: 0;
-	border-bottom: 1px solid #000;
+  margin: 0;
+  position: relative;
+}
+
+h2:after {
+  border-top: 1px solid #000;
+  display: block;
+  height: 1px;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 1.2rem;
+}
+
+h2 span {
+  padding-right: 1rem;
+  z-index: 10;
 }
 
 p {
-	margin: .5rem 0;
+  margin: .5rem 0;
 }
 
 #contact {
-	display: block;
-	text-align: center;
-	font-weight: bold;
-	margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 ul {
-	margin: .5rem 0;
-	list-style-type: square;
-	padding: 0 0 0 2rem;
+  margin: .5rem 0;
+  list-style-type: square;
+  padding: 0 0 0 2rem;
 }
 li {
-	margin: 0;
+  margin: 0;
 }
 
 #skills ul {
-	padding: 0;
-	margin: .5rem -.5rem
+  padding: 0;
+  margin: .5rem -.5rem
 }
 #skills ul li {
-	display: inline-block;
-	margin: 0 0.5rem;
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 
 time {
-	float: right;
+  float: right;
 }
