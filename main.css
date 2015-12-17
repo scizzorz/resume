@@ -1,47 +1,3 @@
-@media screen {
-  body {
-    background: #FBFBFB;
-    color: #333;
-  }
-  a {
-    color: #339;
-  }
-  a strong {
-    color: #229;
-  }
-  h2:after {
-    border-color: #999 !important;
-  }
-  h2 span {
-    background: #FBFBFB;
-  }
-  time {
-    color: #666;
-  }
-  #container {
-    padding: .5in;
-  }
-  small {
-    display: none;
-  }
-}
-@media print {
-  body {
-    background: #FFF;
-    color: #000;
-  }
-  h2 span {
-    background: #FFF;
-  }
-  a {
-    color: #000;
-  }
-  #container {
-    padding: 0in;
-    height: 10in;
-  }
-}
-
 html {
   font-size: 11pt;
 }
@@ -127,4 +83,60 @@ li {
 
 time {
   float: right;
+}
+
+
+@media screen {
+  body {
+    background: #FBFBFB;
+    color: #333;
+    line-height: 1.5em;
+  }
+  a {
+    color: #339;
+  }
+  a strong {
+    color: #229;
+  }
+
+  ul {
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  h2 {
+    margin: 1rem 0;
+  }
+  h2:after {
+    top: 0.8rem;
+    border-color: #999 !important;
+  }
+  h2 span {
+    background: #FBFBFB;
+  }
+  time {
+    color: #666;
+  }
+  #container {
+    padding: .5in;
+  }
+  small {
+    display: none;
+  }
+}
+@media print {
+  body {
+    background: #FFF;
+    color: #000;
+    line-height: normal;
+  }
+  h2 span {
+    background: #FFF;
+  }
+  a {
+    color: #000;
+  }
+  #container {
+    padding: 0in;
+    height: 10in;
+  }
 }
