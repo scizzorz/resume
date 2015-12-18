@@ -94,6 +94,7 @@ time {
   }
   a {
     color: #339;
+    text-decoration: underline;
   }
   a strong {
     color: #229;
