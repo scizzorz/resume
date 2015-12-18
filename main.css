@@ -80,6 +80,10 @@ li {
   display: inline-block;
   margin: 0 0.5rem;
 }
+#skills ul li.strong {
+  font-weight: bold;
+  width: 5em;
+}
 
 time {
   float: right;
