@@ -44,7 +44,7 @@ h2:after {
   left: 0;
   right: 0;
   z-index: -1;
-  top: 1.2rem;
+  top: 0.9rem;
 }
 
 h2 span {
@@ -134,14 +134,20 @@ time {
     color: #000;
     line-height: normal;
   }
+  h2 {
+    font-size: 1.2rem;
+  }
   h2 span {
     background: #FFF;
+  }
+  p, ul {
+    margin: 0.2rem 0;
   }
   a {
     color: #000;
   }
   #container {
     padding: 0in;
-    height: 10in;
+    height: 9in;
   }
 }
