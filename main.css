@@ -7,8 +7,11 @@ body {
 code {
   font-family: 'Source Code Pro', monospace;
 }
+
 small {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  display: block;
+  float: right;
 }
 
 #container {
@@ -26,17 +29,21 @@ a:hover {
 h1, h2, strong {
   color: #222;
 }
+
 h1 {
+  font-size: 2em;
   margin: 0;
   text-align: center;
 }
+
 h2 {
   margin: 0;
   position: relative;
 }
 
+/* horizontal rule behind the header */
 h2:after {
-  border-top: 1px solid #000;
+  border-top: 1px solid #CCC;
   display: block;
   height: 1px;
   content: " ";
@@ -47,6 +54,7 @@ h2:after {
   top: 0.9rem;
 }
 
+/* above the rule */
 h2 span {
   padding-right: 1rem;
   z-index: 10;
@@ -66,23 +74,46 @@ p {
 ul {
   margin: .5rem 0;
   list-style-type: square;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.5rem;
 }
 li {
   margin: 0;
 }
 
+#skills {
+  text-align: center;
+}
+
 #skills ul {
+  text-align: left;
   padding: 0;
-  margin: .5rem -.5rem
+  margin: 0.5rem 0;
+  display:  inline-block;
+  list-style: none;
+  vertical-align: top;
+  border-left: 1px solid #CCC;
 }
+
+#skills ul:first-child {
+  border-left: none;
+}
+
 #skills ul li {
-  display: inline-block;
-  margin: 0 0.5rem;
+  margin: 0 1.2em;
+  display: list-item;
 }
+
+#skills ul:first-child li {
+  margin-left: 0;
+}
+
+#skills ul:last-child li {
+  margin-right: 0;
+}
+
 #skills ul li.strong {
   font-weight: bold;
-  width: 5em;
+  margin-bottom: 0.5em;
 }
 
 time {
@@ -92,20 +123,29 @@ time {
 
 @media screen {
   body {
-    background: #FBFBFB;
-    color: #333;
+    background: #FCFCFC;
+    color: #2B3235;
     line-height: 1.5em;
   }
   a {
-    color: #339;
-    text-decoration: underline;
+    color: #3D94FF;
+  }
+  a:hover {
+    color: #AD6BFF;
   }
   a strong {
-    color: #229;
+    color: #3D94FF;
+  }
+  a:hover strong {
+    color: #AD6BFF;
   }
 
   ul {
     margin: 0.5rem 0 1rem 0;
+  }
+
+  #skills ul {
+    border-color: #CCC !important;
   }
 
   h2 {
@@ -113,18 +153,18 @@ time {
   }
   h2:after {
     top: 0.8rem;
-    border-color: #999 !important;
+    border-color: #CCC !important;
   }
   h2 span {
-    background: #FBFBFB;
+    background: #FCFCFC;
   }
   time {
-    color: #666;
+    color: #495759;
   }
   #container {
     padding: .5in;
   }
-  small {
+  .print {
     display: none;
   }
 }
