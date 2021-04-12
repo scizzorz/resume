@@ -21,37 +21,38 @@
         &#8210; <span id="phone">607.323.1269</span>
         <br>
         <a id="github" href="https://github.com/scizzorz">github.com/scizzorz</a>
-      </p>
+      </div>
 
       <!-- spans are nested to overlap the h2's centered horizontal line -->
       <h2><span>Education</span></h2>
       <div id="education">
-        <p>
-          <strong>M.S., Computer Science</strong> &#8210; Binghamton University <time>2017</time>
-          <br>
+        <div>
+          <span class="degree">M.S., Computer Science</span><span class="school">Binghamton University</span>
+          <time>2017</time>
+        </div>
 
-          <strong>B.S., Computer Science</strong> &#8210; Binghamton University <time>2015</time>
-          <br>
-        </p>
+        <div>
+          <span class="degree">B.S., Computer Science</span><span class="school">Binghamton University</span>
+          <time>2015</time>
+        </div>
       </div>
 
       <h2><span>Employment</span></h2>
       <div id="employment">
-        <p>
+        <div>
           <!-- technically this was "official" in 2020, but the work and roles date back to 2019 -->
-          <strong>Senior Software Engineer</strong>
-          &#8210; Corning Incorporated
+          <span class="title">Senior Software Engineer</span><span class="employer">Corning Incorporated</span>
           <time>2019 - present</time>
-        </p>
+        </div>
 
-        <span>Project Architect</span> &#8210; <em>Materials Informatics</em>
+        <span class="role">Project Architect</span><span class="project">Materials Informatics</span>
         <ul>
           <li>Pioneer development, architecture, tooling, and prototypes for a novel research operations platform</li>
           <li>Devise and implement an innovative graph-based data system that allows for rapid, intuitive, and organic exploration of data and concepts</li>
           <!-- <li>Establish and enforce best practices across a small software development team</li> -->
         </ul>
 
-        <span>Auxiliary Engineer</span> &#8210; <em>Enterprise Risk &amp; Intelligence</em>
+        <span class="role">Auxiliary Engineer</span><span class="project">Enterprise Risk &amp; Intelligence</span>
         <ul>
           <li>Secured funding for an <a href="https://tech.wayfair.com/2020/06/what-is-auxiliary-engineering/">auxiliary engineering</a> pilot engagement with a financial analysis team</li>
           <li>Accelerate team development through hands-on mentorship of SWE best practices and effective tooling</li>
@@ -59,18 +60,17 @@
         </ul>
 
         <!-- this one did start in early 2021, but I was mostly doing all of this before then, too -->
-        <span>Team Lead</span> &#8210; <em>Digital Transformation: Application Development</em>
+        <span class="role">Team Lead</span><span class="project">Digital Transformation: Application Development</span>
         <ul>
           <li>Collect and align plans for policy change to improve software developer culture and working conditions</li>
           <li>Advocate for engagement with open-source communities and secured major sponsorships with PyCon</li>
           <li>Organize networking sessions focused on building a software development community</li>
         </ul>
 
-        <p>
-          <strong>Software Engineer</strong>
-          &#8210; Corning Incorporated
+        <div>
+          <span class="title">Software Engineer</span><span class="employer">Corning Incorporated</span>
           <time>2017 - 2019</time>
-        </p>
+        </div>
 
         <ul>
           <li>Delivered multiple internal web applications to accelerate research engineers</li>
@@ -78,117 +78,52 @@
           <li>Led training sessions for technologies like Git, Python, Rust, Go, and Docker</li>
         </ul>
 
-        <p>
-          <strong>Software Engineering Intern</strong>
-          &#8210; Corning Incorporated
+        <div>
+          <span class="title">Software Engineering Intern</span><span class="employer">Corning Incorporated</span>
           <time>2016 - 2017</time>
-        </p>
+        </div>
         <!-- everyone knows what interns do -->
 
-        <!-- this was kinda interesting, but RIP Hadoop
-        <p>
-          <strong>NSF REU / Research Assistant</strong>
-          &#8210; MapReduce and Distributed Systems
-          <time>2013 - 2015</time>
-        </p>
+        <!-- snipped out some less significant job experience -->
 
-        <ul>
-          <li>Collaborated to enhance a custom MapReduce implementation, experiment on several HPC research clusters, and experience the challenges and rewards of big data computing</li>
-          <li>Researched new techniques for using SSDs during big data processing</li>
-          <li>Explored new methods to simplify big data processing and analysis for scientists</li>
-        </ul>
-        -->
-
-        <p>
-          <strong>Web Developer</strong>
-          &#8210; Freelance
-
-          <time>2005 - present</time>
-        </p>
         <!-- this was high school / undergrad work for a lot of small businesses -->
+        <div>
+          <span class="title">Web Developer</span><span class="employer">Freelance</span>
+          <time>2005 - present</time>
+        </div>
       </div>
 
       <h2><span>Projects</span></h2>
       <div id="projects">
-        <p>
-          <a href="https://github.com/xtfc/mold">
-            <strong>Mold</strong>
-            &#8210; task runner
-            <span class="print">&#8210; github.com/xtfc/mold</span>
-          </a>
+        <div>
+          <a href="https://github.com/xtfc/mold" class="petproject">Mold</a><span class="description">task runner</span><span class="print link">github.com/xtfc/mold</span>
           <time>2020</time>
-        </p>
+        </div>
+
         <ul>
           <li>Developed a command-line tool to help organize common software project chores</li>
           <li>Mold is designed to be a toolchain agnostic task runner with easily reusable task modules</li>
         </ul>
 
-        <p>
-          <a href="https://github.com/scizzorz/milk">
-            <strong>Milk</strong>
-            &#8210; Git porcelain
-            <span class="print">&#8210; github.com/scizzorz/mold</span>
-          </a>
+        <div>
+          <a href="https://github.com/scizzorz/milk" class="petproject">Milk</a><span class="description">Git porcelain</span><span class="print link">github.com/scizzorz/mold</span>
           <time>2019</time>
-        </p>
+        </div>
+
         <ul>
           <li>Developed a new Git porcelain using libgit2 and Rust</li>
           <li>Milk is designed to improve the human experience of interacting with Git repositories</li>
         </ul>
 
-        <p>
-          <a href="https://github.com/scizzorz/mask">
-            <strong>Mask</strong>
-            &#8210; programming language
-            <span class="print">&#8210; github.com/scizzorz/mask</span>
-          </a>
+        <div>
+          <a href="https://github.com/scizzorz/mask" class="petproject">Mask</a><span class="description">programming language</span><span class="print link">github.com/scizzorz/mask</span>
           <time>2018</time>
-        </p>
+        </div>
+
         <ul>
           <li>Designed a new programming language to experiment with some novel syntax and semantics</li>
           <li>Wrote source-to-bytecode compiler and bytecode interpreter in Rust</li>
         </ul>
-
-        <!-- outta space ¯\_(ツ)_/¯
-        <p>
-          <a href="https://github.com/scizzorz/slag">
-            <strong>slag</strong>
-            &#8210; microblog
-            <span class="print">&#8210; github.com/scizzorz/slag</span>
-          </a>
-          <time>2018</time>
-        </p>
-        <ul>
-          <li>Experiment with libgit2 to develop a Git-based microblog</li>
-          <li>Implemented a static site generator with Python</li>
-        </ul>
-
-        <p>
-          <a href="https://github.com/philipdexter/vx">
-            <strong>vx</strong>
-            &#8210; text editor
-            <span class="print">&#8210; github.com/philipdexter/vx</span>
-          </a>
-          <time>2017</time>
-        </p>
-        <ul>
-          <li>Conceived original idea for the design of a terminal-based text editor</li>
-          <li>Contributed to the API structure and development</li>
-        </ul>
-
-        <p>
-          <span>
-            <strong>Barduino</strong>
-            &#8210; robotic bartender
-          </span>
-          <time>2017</time>
-        </p>
-        <ul>
-          <li>Designed and assembled a smart bar controlled via Raspberry Pi + Arduino</li>
-          <li>Accessed via web app with list of available drink recipes</li>
-        </ul>
-        -->
-
       </div>
 
       <h2><span>Skills</span></h2>

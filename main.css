@@ -44,10 +44,6 @@ body {
   line-height: 1.5rem;
 }
 
-strong {
-  color: var(--strong);
-}
-
 h1 {
   color: var(--strong);
   font-size: 2rem;
@@ -89,7 +85,27 @@ h2 span {
   text-align: center;
 }
 
-p {
+.petproject,
+.degree,
+.title {
+  font-weight: bold;
+  color: var(--strong);
+}
+
+.school:before,
+.project:before,
+.description:before,
+.link:before,
+.employer:before {
+  content: "\002012 ";
+  margin: 0.25em;
+}
+
+.project {
+  font-style: italic;
+}
+
+div {
   margin: 0.5rem 0;
 }
 
@@ -103,11 +119,11 @@ a:hover {
   text-decoration: underline;
 }
 
-a strong {
+a.petproject {
   color: var(--links);
 }
 
-a:hover strong {
+a.petproject:hover {
   color: var(--hover);
 }
 
@@ -186,7 +202,7 @@ time {
     margin: 0;
   }
 
-  p {
+  div {
     margin: 0.2rem 0;
   }
 
