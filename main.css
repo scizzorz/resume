@@ -143,10 +143,6 @@ ul li {
   margin: 0;
 }
 
-#skills {
-  text-align: center;
-}
-
 #skills ul {
   text-align: left;
   padding: 0;
@@ -201,6 +197,10 @@ time {
 @media only screen and (min-width: 500px) and (max-width: 783px) {
   #skills ul {
     width: 30%;
+  }
+
+  #skills {
+    text-align: center;
   }
 
   #skills ul:nth-child(4) {
