@@ -159,6 +159,7 @@ ul li {
 
 #skills ul li.strong {
   font-weight: bold;
+  color: var(--strong);
   margin-bottom: 0.5rem;
 }
 
