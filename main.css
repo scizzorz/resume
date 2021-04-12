@@ -109,6 +109,11 @@ div {
   margin: 0.5rem 0;
 }
 
+/* don't need to space these out */
+#education div {
+  margin: 0;
+}
+
 a {
   color: var(--links);
   text-decoration: none;
@@ -182,6 +187,38 @@ time {
 @media screen {
   .print {
     display: none;
+  }
+}
+
+/* this looks good on my phone. sucks if it doesn't on yours. */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 3.6in;
+    padding: 0.1in;
+  }
+
+  time {
+    vertical-align: top;
+  }
+
+  .school:before,
+  .link:before,
+  .employer:before {
+    display: block;
+    content: "";
+    margin: 0;
+  }
+
+  #skills ul {
+    width: 1.7in;
+  }
+
+  #skills ul:nth-child(odd) {
+    border-left: none;
+  }
+
+  #skills ul:nth-child(odd) li {
+    margin-left: 0;
   }
 }
 
