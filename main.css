@@ -193,6 +193,7 @@ time {
     width: 100%;
     min-width: 3.4in;
   }
+}
 
 @media only screen and (min-width: 500px) and (max-width: 783px) {
   #skills ul {
