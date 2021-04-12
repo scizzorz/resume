@@ -198,10 +198,25 @@ time {
     min-width: 3.4in;
   }
 
-  time {
-    vertical-align: top;
+@media only screen and (min-width: 500px) and (max-width: 783px) {
+  #skills ul {
+    width: 30%;
   }
 
+  #skills ul:nth-child(4) {
+    border-left: none;
+  }
+
+  #skills ul:nth-child(4) li {
+    margin-left: 0;
+  }
+
+  #skills ul:nth-child(7) {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 499px) {
   .school:before,
   .link:before,
   .employer:before {
