@@ -38,9 +38,10 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   margin: auto;
-  width: 7.5in;
-  padding: 0.5in;
+  width: 8.0in;
+  padding: 0.25in;
   line-height: 1.5rem;
 }
 
@@ -191,10 +192,10 @@ time {
 }
 
 /* this looks good on my phone. sucks if it doesn't on yours. */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 783px) {
   body {
-    width: 3.6in;
-    padding: 0.1in;
+    width: 100%;
+    min-width: 3.4in;
   }
 
   time {
