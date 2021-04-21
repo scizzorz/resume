@@ -52,6 +52,10 @@ h1 {
   text-align: center;
 }
 
+.cover h1 {
+  text-align: left;
+}
+
 h2 {
   color: var(--strong);
   font-size: 1.5rem;
@@ -72,6 +76,14 @@ h2:after {
   z-index: -1;
 }
 
+.cover h2 {
+  color: var(--lowlight);
+}
+
+.cover h2:after {
+  content: none;
+}
+
 /* text layered above the rule */
 h2 span {
   padding-right: 1rem;
@@ -84,6 +96,40 @@ h2 span {
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.cover #contact {
+  float: right;
+}
+
+.cover #contact a,
+.cover #contact span {
+  text-align: right;
+  display: block;
+}
+
+.cover #email:before {
+  content: "email: ";
+  font-weight: normal;
+  color: var(--lowlight);
+}
+
+.cover #phone:before {
+  content: "phone: ";
+  font-weight: normal;
+  color: var(--lowlight);
+}
+
+.cover #address:before {
+  content: "location: ";
+  font-weight: normal;
+  color: var(--lowlight);
+}
+
+.cover #github:before {
+  content: "github: ";
+  font-weight: normal;
+  color: var(--lowlight);
 }
 
 .petproject,
@@ -108,6 +154,10 @@ h2 span {
 
 div {
   margin: 0.5rem 0;
+}
+
+.cover p {
+  margin: 1.75rem 0;
 }
 
 /* don't need to space these out */
@@ -179,6 +229,22 @@ ul li {
 time {
   color: var(--lowlight);
   float: right;
+}
+
+.cover time {
+  color: var(--lowlight);
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
+  display: block;
+  float: none;
+}
+
+.cover .to {
+  color: var(--lowlight);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  display: block;
+  float: none;
 }
 
 @media screen {
@@ -259,6 +325,18 @@ time {
   h2 {
     font-size: 1.3rem;
     margin: 0;
+  }
+
+  /* but undo those changes for cover letters... */
+  /* should I have a class for the above instead of disabling it here...? maybe... */
+  .cover h1 {
+    line-height: 1.5rem !important;
+    font-size: 2em;
+  }
+
+  .cover h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
   div {
