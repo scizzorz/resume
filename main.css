@@ -45,6 +45,11 @@ body {
   line-height: 1.5rem;
 }
 
+.cover {
+  font-size: 13pt;
+  text-align: justify;
+}
+
 h1 {
   color: var(--strong);
   font-size: 2rem;
@@ -100,6 +105,7 @@ h2 span {
 
 .cover #contact {
   float: right;
+  margin-top: 0;
 }
 
 .cover #contact a,
